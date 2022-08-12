@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2b2922;
+    --white-color: #fff;
+    --yellow-color: #9d8c35;
+}
+
+body {
+    background-color: var(--primary-color);
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 60vh;
+    margin: 0% 7% ;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    padding: 20px 0;
+}
+  
+.navbar .logo {
+    width: 7rem;
+}
+  
+.navbar .list {
+    display: flex;
+    flex-direction: row;
+}
+  
+.list .list-item {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--white-color);
+    opacity: 0.6;
+    padding: 0 20px;
+}
+
+.list .list-item:first-child {
+    opacity: 1;
+}
+
+.navbar div:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+  
+.button {
+    background-color: var(--primary-color);
+    color: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+    width: 135px;
+    padding: 12px 23px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.button:hover {
+    box-shadow: 0 0 15px var(--yellow-color);
+    cursor: pointer;
+}
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+section .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 44vh;
+    gap: 30px;
+}
+
+.slogan-text {
+    font-weight: 800;
+    color: var(--white-color);
+    font-size: 4rem;
+    text-align: left;
+}
+
+.description-text {
+    text-align: left;
+    color: var(--white-color);
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 7rem;
+}
+  
+
+/* ---------------------- Hero Image ------------------- */
+
+.hero-image {
+    height: 40vh;
+    width: 100%;
+    background: url(./assets/pexels-ekaterina-bolovtsova-6077326.jpg);
+    background-size: cover;
+    background-position-y: -245px;
+}
